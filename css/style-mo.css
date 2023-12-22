@@ -324,18 +324,11 @@ nav .menu a.blue{
 
 .s4 .safe{
     margin-top: 3rem;
-
-    h1{
-        color: #FFAB2E;
-    }
-    h2{
-        color: #FFAB2E;
-    }
-
-    button{
-        background-color: #FFAB2E;
-    }
 }
+
+.s4 .safe h1{color: #FFAB2E;}
+.s4 .safe h2{color: #FFAB2E;}
+.s4 .safe button{background-color: #FFAB2E;}
 
 .s4 .i-box{
     position: absolute;
