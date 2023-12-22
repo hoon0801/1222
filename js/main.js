@@ -6,6 +6,7 @@ function mobile(){
     let s4Height = window.innerHeight * 2;
     $('.s4').height(s4Height);
 
+    // header
     let navSwitch = false;
     $('.navOpen').click(function(){
     
@@ -28,10 +29,23 @@ function mobile(){
         $(this).toggleClass('close');
     
     });
+    // header
 
-    $('nav .menu a').click(function(){
-        $(this).addClass('blue').siblings().removeClass('blue')
-    })
+    // 클릭시 이동
+    let menu = $('.menu');
+    let menuList = $('.menu a'); 
+    let section = $('section');
+    menuList.click(function(e){
+        e.preventDefault();
+        let i = $(this).index();
+        let destination = section.eq(i+1).offset().top;
+        $('html, body').stop()
+        .animate({'scrollTop' : destination});
+        $(this).addClass('blue').siblings().removeClass('blue');
+    });
+    // 클릭시 이동
+
+    
     
     // s4
     const highlight = document.getElementById("highlight-style");
