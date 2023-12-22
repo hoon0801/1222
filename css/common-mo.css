@@ -1,0 +1,44 @@
+*{margin: 0; padding: 0;}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+html{
+    color: #222222;
+    font-family: 'Pretendard';
+    font-size: 1rem;
+}
+
+button{
+    border: none;
+    background-color: inherit;
+}
+
+a, span, img{display: block;}
+
+.wrap{
+    padding: 0 20px;
+}
+
+.tit-wrap{
+    font-size: 2.75rem;
+    font-family: 'S-Core';
+}
+.tit-box span{
+    font-family: 'MapoDPP';
+    color: #2E82FF;
+}/* 제목속성 */
+
+.kr-txt{
+    font-size: 0.6875rem;
+}/* 한글 부제목 */
+.en-txt{
+    margin-top: 12px;
+    line-height: 0.75rem;
+    font-size: 0.63rem;
+    font-family: 'S-Core';
+}/* 영어 부제목 */

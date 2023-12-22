@@ -1,0 +1,8 @@
+@media all and (min-width:1280px){
+    .mo{display: none;}
+    .pc{display: block;}
+
+    .tit-wrap{font-size: 7.5rem; /* 120px */}
+    .kr-txt{font-size: 1.75rem; /* 28px */}
+    .en-txt{line-height: 1.13rem; /* 18px */ }
+}/* 1280px */ 
