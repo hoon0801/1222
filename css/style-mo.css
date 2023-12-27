@@ -104,6 +104,8 @@ nav .menu a.blue{
 .txt{
     
 }
+
+/* s1 */
 .s1{
     display: flex;
     justify-content: center;
@@ -175,7 +177,7 @@ nav .menu a.blue{
     0% {
     }
     100% {
-      transform: translateY(-150%) scale(2);
+      transform: translateY(-160%) scale(2);
     }
   }
   
@@ -187,7 +189,7 @@ nav .menu a.blue{
     0% {
     }
     100% {
-      transform: translateX(calc(0.85 * 150%)) translateY(calc(0.5 * 300%))
+      transform: translateX(calc(0.85 * 160%)) translateY(calc(0.5 * 300%))
         scale(2);
     }
   }
@@ -200,10 +202,11 @@ nav .menu a.blue{
     0% {
     }
     100% {
-      transform: translateX(calc(0.85 * -150%)) translateY(calc(0.5 * 300%))
+      transform: translateX(calc(0.85 * -160%)) translateY(calc(0.5 * 300%))
         scale(2);
     }
   }
+  /* s1 */
 
 .s3{
     display: flex;
@@ -211,14 +214,13 @@ nav .menu a.blue{
 }
 
 .s3 .arr{
-  display: block;
-  margin-left: 3.75vw;
-  width: 3.0125rem;
-  height: 2.8125rem;
-  background: url(../images/2arrow.png) repeat-x;
-  background-size: 3.4125rem 2.8125rem;
-  background-repeat: no-repeat;
-  margin-top: 1.7vh;
+    margin-left: 3.75vw;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: url(../images/2arrow.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .s3 .tit-wrap{
@@ -229,7 +231,6 @@ nav .menu a.blue{
     line-height: 2.8125rem;
 }
 
-
 .s3 .tit-box span{
     font-size: 4rem;
 }
@@ -238,7 +239,12 @@ nav .menu a.blue{
     margin-top: 1.4rem;
 }
 
-.s4{}
+.s4{
+}
+
+.s4 .wrap{
+    padding-top: 5vh;
+}
 .s4 .pWrap{
     padding-left: 12px;
     padding-right: 12px;
@@ -251,6 +257,11 @@ nav .menu a.blue{
     border-radius: 2vw;
     position: relative;
 }
+
+#safe{
+    margin-top: 70px;
+}
+
 .s4 .project h1{
     font-size: 1.5rem;
     font-weight: normal;
@@ -291,6 +302,7 @@ nav .menu a.blue{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
 }
 .s4 button .box{
     display: flex;
@@ -487,7 +499,6 @@ nav .menu a.blue{
 .s5 .contact{
     font-size: 0.75rem;
     font-family: 'S-core';
-    
 }
 
 .s5 .contact h3{
@@ -538,11 +549,12 @@ nav .menu a.blue{
     align-items: center;
 }
 .s5 .under .down a{
-    padding-left: 12px;
+    width: 100%;
+    padding-left: -5px;
 }
 .s5 .under .down .d-arrow{
-    width: 0.625rem;
-    padding-left: 4px;
+    width: 0.8rem;
+    padding-right: 7px;
 }
 .s5 .under .down .d-arrow img{
     width: 100%;

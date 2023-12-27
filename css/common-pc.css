@@ -1,6 +1,9 @@
 @media all and (min-width:1280px){
     .mo{display: none;}
     .pc{display: block;}
+    .wrap{
+        padding: 0px;
+    }
 
     .tit-wrap{font-size: 7.5rem; /* 120px */}
     .kr-txt{font-size: 1.75rem; /* 28px */}

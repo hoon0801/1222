@@ -31,25 +31,33 @@ function mobile(){
     });
     // header
 
-    // 클릭시 이동
-    let menu = $('.menu');
-    let menuList = $('.menu a'); 
-    let section = $('section');
-    menuList.click(function(e){
-        e.preventDefault();
-        let i = $(this).index();
-        let destination = section.eq(i+1).offset().top;
-        $('html, body').stop()
-        .animate({'scrollTop' : destination});
-        $(this).addClass('blue').siblings().removeClass('blue');
-    });
-    // 클릭시 이동
+     // s4
+     const highlight = document.getElementById("highlight-style");
 
-    
-    
-    // s4
+     gsap.registerPlugin(ScrollTrigger);
+     
+     gsap.utils.toArray(".text-highlight").forEach((highlight) => {
+       ScrollTrigger.create({
+         trigger: highlight,
+         start: "-100px center",
+         onEnter: () => highlight.classList.add("active")
+       });
+     });
+     
+     const setHighlightStyle = (value) =>
+       document.body.setAttribute("data-highlight", value);
+     
+     highlight.addEventListener("change", (e) => setHighlightStyle(e.target.value));
+     
+     setHighlightStyle(highlight.value);
+     // s4
+   
+}//mobile
+
+function pc(){
+       // s4
     const highlight = document.getElementById("highlight-style");
-    
+
     gsap.registerPlugin(ScrollTrigger);
     
     gsap.utils.toArray(".text-highlight").forEach((highlight) => {
@@ -66,15 +74,81 @@ function mobile(){
     highlight.addEventListener("change", (e) => setHighlightStyle(e.target.value));
     
     setHighlightStyle(highlight.value);
-    
     // s4
-    }//mobile
+}
+
+function common(){
+
+      // header 클릭시 이동
+      let menuList = $('.menu a'); 
+      let section = $('section');
+      menuList.click(function(e){
+          e.preventDefault();
+          let i = $(this).index();
+          let destination = section.eq(i+1).offset().top;
+          $('html, body').stop()
+          .animate({'scrollTop' : destination});
+      });
+
+      let aboutUs = $('.menu .about')
+      let dd = $('#dd')
+      aboutUs.click(function(e){
+        e.preventDefault();
+          let dest = dd.offset().top;
+          $('html, body').stop()
+          .animate({'scrollTop' : dest});
+      })
+      // header 클릭시 이동
+
+    // $('nav .menu a').addEventListener("mouseover",function(){
+    //     $(this).addClass('blue').siblings().removeClass('blue');
+    // })
+
+    $('nav .menu a').mousOver(function(){
+        $(this).addClass('blue').siblings().removeClass('blue');
+    })
+
+    $('nav .menu a').click(function(){
+        $(this).addClass('blue').siblings().removeClass('blue');
+    })
+
+   
+}
 
 
 let winWidth = $(window).width();
-if(winWidth >= 1280){
-    pc();
-}else{
+
+if(winWidth < 1280){
+
     mobile();
+
+}else{
+
+    pc();
 }
+
+
 common();
+
+
+
+$(window).resize(function(){
+
+  let winWidth2 = $(window).width();
+
+if(winWidth2 < 1280){
+setTimeout(function(){
+  location.reload();
+  },500)
+  mobile();
+
+}else{
+  setTimeout(function(){
+      location.reload();
+  },500)
+  pc();
+}
+
+
+
+})
