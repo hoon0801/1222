@@ -356,6 +356,7 @@ nav .menu a.blue{
 .s3{
     display: flex;
     align-items: center;
+    padding-top: 120px;
 }
 
 .s3 .tit-wrap{
@@ -363,7 +364,7 @@ nav .menu a.blue{
 }
 
 .s3 .arr{
-    margin-left: 3.75vw;
+    margin-left: 4px;
     width: 4.5rem;
     height: 4.5rem;
     background: url(../images/2arrow.png);
@@ -389,6 +390,7 @@ nav .menu a.blue{
 }
 
 .s4{
+    padding-top: 100px;
 }
 
 .s4 .wrap{
@@ -408,7 +410,7 @@ nav .menu a.blue{
 }
 
 #safe{
-    margin-top: 70px;
+    margin-top: 100px;
 }
 
 .s4 .project h1{
@@ -698,6 +700,7 @@ nav .menu a.blue{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 100px;
 }
 .s5 h1{
     font-family: 'S-core';

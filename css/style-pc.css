@@ -291,10 +291,13 @@
     /* s2 */
     
       /* s3 */
+    .s3{
+        margin-top: 0;
+    }
+
     .s3 .wrap{
        display: flex;
        align-items: center;
-       height: 100vh;
     }
     
     .s3 .arr{
@@ -349,6 +352,7 @@
     /* s4 */
 
     .s4{
+        margin-top: 0;
     }
     .s4 .wrap{
         width: 100vw;

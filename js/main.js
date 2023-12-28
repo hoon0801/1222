@@ -1,11 +1,8 @@
 function mobile(){
 
     let winHeight = window.innerHeight;
-    $('.s1 , .s2 , .s3 , .s5').height(winHeight);
+    $('.s1').height(winHeight);
  
-    let s4Height = window.innerHeight * 1.7;
-    $('.s4').height(s4Height);
-
     // header
     let navSwitch = false;
     $('.navOpen').click(function(){
@@ -154,7 +151,7 @@ function common(){
       let pro = $('.pro')
       aboutUs.click(function(e){
         e.preventDefault();
-          let dest = pro.offset().top + 200;
+          let dest = pro.offset().top;
           $('html, body').stop()
           .animate({'scrollTop' : dest});
       })
