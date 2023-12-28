@@ -1,5 +1,4 @@
 body{
-    overflow-x: hidden;
 }
 
 .pc{
@@ -217,7 +216,6 @@ nav .menu a.blue{
 /* s2 */
 .s2{
     background-color: #ffffff;
-    overflow-x: hidden;
 }
 .s2 .wrap{
     position: relative;
@@ -240,6 +238,8 @@ nav .menu a.blue{
     height: 302.57px;
 }
 .s2 .slider .txt-slider{
+    width: 100%;
+    overflow: hidden;
     display: inline-block;
     position: absolute;
     top: 50%;
@@ -785,8 +785,8 @@ nav .menu a.blue{
     margin-top: 1.5rem;
 }
 .s5 .under .down{
-    width: 7.5rem;
-    height: 1.5rem;
+    width: 120px;
+    height: 25px;
     border: 1px solid #363636;
     border-radius: 1.5vw;
     display: flex;
@@ -796,10 +796,11 @@ nav .menu a.blue{
 }
 .s5 .under .down p{
     font-size: 0.625rem;
-    margin-left: 0.3rem;
+    margin-left: 3px;
 }
 .s5 .under .down .d-arrow{
     width: 0.8rem;
+    margin-left: 2px;
 }
 .s5 .under .down .d-arrow img{
     width: 100%;
