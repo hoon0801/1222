@@ -25,6 +25,7 @@ a, span, img{display: block;}
 }
 
 .tit-wrap{
+    margin-top: 150px;
     font-size: 2.75rem;
     font-family: 'S-Core';
 }

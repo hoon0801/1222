@@ -2,6 +2,29 @@
     .mo{display: none;}
     .pc{display: block;}
 
+    body{
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        user-select:none;
+        overflow-x: hidden;
+    }
+
+    body::-webkit-scrollbar{
+        width: 10px;
+    }
+
+    body::-webkit-scrollbar-thumb{
+        height: 30%;
+        background: #217af4; /* 스크롤바의 색상 */
+        border-radius: 10px;
+    }
+
+    body::-webkit-scrollbar-track{
+        background: rgba(33, 124, 244, .1);
+    }
+
+
     .wrap{
         width: 1280px;
         padding: none;
@@ -62,7 +85,40 @@
         color: #2E82FF;
     }
 
+    .cursor{
+        position: fixed;
+        top: -10px;
+        left: -9px;
+        pointer-events: none;
+        z-index: 999;
+    }
+    
+    .custom{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        pointer-events: none;
+        z-index: 999;
+        background-color: #2E82FF;
+        border-radius: 50%;
+    }
+
+    .custom.active{
+        position: absolute;
+        pointer-events: none;
+        z-index: 999;
+        transform: scale(3.2);
+        opacity: 50%;
+        background-color: inherit;
+        border: 1px solid #2E82FF;
+    }
+    
+
     /* s1 */
+    .s1{
+        height: 100vh;
+    }
+    
     .s1 .wrap{
         display: flex;
         justify-content: center;
@@ -70,7 +126,7 @@
     }
 
     .s1 .txt{
-        margin-top: 253px;
+        margin-top: 100px;
         position: relative;
     }
     
@@ -173,7 +229,66 @@
       }
       /* s1 */
 
+    /* s2 */
+    .s2{
+        height: 100vh;
+        overflow-y: hidden;
+    }
 
+    .s2 .en-txt{
+        font-size: 1rem;
+        position: absolute;
+        top: 7.5%;
+        left: 17%;
+        line-height: 1.5rem;
+    }
+    .s2 .slider .txt-slider{
+        top: 30%;
+    }
+    .s2 .layout-wrap{
+        top: 10%;
+        left: 40%;
+        width: 425px;
+        height: 300px;
+        overflow: hidden;
+    }
+    .s2 .arr{
+        margin: 12px 0 0 24px;
+        width: 100px; 
+        height: 100px;
+        background-size: 99px 99px;
+    }
+    .s2 .slider .img-slider{
+        width: 464px;
+        height: 750px;
+        top: -110%;
+    }
+    .s2 .img-slider>div p{
+        font-size: 1.75rem;
+        bottom: 24px;
+        right: 24px;
+        font-weight: 300;
+    }
+    .s2 .txt-slider .slider-article,
+    .s2 .swiper-pagination,
+    .s2 .swiper-pagination-current{
+        font-family: 'MapoDPP';
+        font-size: 3rem;
+    }
+    .s2 .swiper-pagination-total{
+        font-size: 1rem;
+        margin: 8px 0 0 24px;
+    }
+    .s2 .slider-arr{
+        top: 88%;
+        width: 30px;
+        height: 30px;
+    }
+    .s2 .swiper-button-next{right: 60%;}
+    .s2 .swiper-button-prev{left: 20%;}
+
+    /* s2 */
+    
       /* s3 */
     .s3 .wrap{
        display: flex;
@@ -232,7 +347,8 @@
 
     /* s4 */
 
-    .s4{}
+    .s4{
+    }
     .s4 .wrap{
         width: 100vw;
         padding: none;
@@ -270,14 +386,16 @@
         box-shadow: 4px 5px 5px hsl(0deg 0% 0% / 0.15);
         margin-left: -40px;
         border-radius: 15px;
-        backdrop-filter: blur(35px);
-        background: linear-gradient(100px);
         margin-top: 85px;
+        -webkit-backdrop-filter: blur(120px);
+        backdrop-filter: blur(120px);
+        background-color: rgb(255, 255, 255, 0.6);
     }
 
     .s4 .txt-box{
         margin-left: 60px;
         padding-top: 60px;
+        position: relative;
     }
     
     .s4 .project{
@@ -315,6 +433,7 @@
         margin-top: 15px;
     }
     .s4 .project .main{
+        
     }
     
     .s4 .project .main p{
@@ -336,7 +455,7 @@
         margin-left: 280px;
     }
 
-    .s4   button .box .arrow{
+    .s4 button .box .arrow{
         width: 16px;
     }
 
@@ -359,12 +478,50 @@
     .s4 .safe h1{color: #FFAB2E;}
     .s4 .safe h2{color: #FFAB2E;}
     .s4 .safe button{background-color: #FFAB2E;}
+
+    .s4 .pro h1{
+        display: flex;
+        align-items: baseline;
+        font-size: 4rem;
+        padding-top: 18rem;
+    }
+    .s4 .pro h1 span{
+        font-size: 4rem;
+        margin-left: 12px;
+    }
+    .s4 .main2{
+        height: 600px;
+    }
+    .s4 .office-img-slider{
+        top: 25%;
+    }
+    .s4 .ois-arr{
+        top: 20%;
+        width: 30px;
+        height: 30px;
+    }
+    .s4 .swiper-pagination,
+    .s4 .swiper-pagination-current{
+        font-family: 'MapoDPP';
+        font-size: 3rem;
+    }
+    .s4 .swiper-pagination-total{
+        font-size: 1rem;
+        margin: 8px 0 0 24px;
+    }
+    .s4 .ois-arr-prev{
+        left: 79%;
+    }
+    .s4 .ois-arr-next{
+        right: 11%;
+    }
     
     /* s4 */
 
     /* s5 */
     .s5{
         height: 100vh;
+        margin-top: 120px;
     }
 
     .s5 h1{
@@ -457,9 +614,10 @@
         font-size: 1.375rem;
         font-family: 'Pretendard';
         margin-top: -35px;
+        cursor: pointer;
     }
     
-    .s5 .con .down a{
+    .s5 .con .down p{
         padding-left: 24px;
         display: block;
     }

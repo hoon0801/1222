@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+.pr-pc{display: none;}
+.pr-mo{display: none;}
+
+body{
+    margin: 0 auto;
+}
+
+.p-wrap{
+    width: 90vw;
+    margin: 0 auto 5vh auto;
+}
+html{
+    color: #222222;
+    font-family: 'Pretendard';
+}
+
+h1{
+    font-family: 'MapoDPP';
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    padding-top: 5vh;
+}
+
+.title-under{
+    width: 20vw;
+    height: 0.3vh;
+    background-color: #2B57FF;
+    margin: 1vh auto 0 auto;
+    border-radius: 50vw;
+}
+
+.s0, .s1{margin-top: 3vh;}
+.s0 strong{
+    font-size: 0.8rem;
+}
+
+.s1 .text{margin-top: 3vh;}
+.s1 .text .ar-tit{
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #009BDD;
+}
+.s1 .text .pragraph{
+    margin: 0.5vh 0;
+}
+.s1 .text .pragraph p{
+    font-size: 0.65rem;
+    font-weight: 500;
+    text-wrap: pretty;
+}

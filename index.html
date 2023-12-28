@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/common-mo.css">
     <link rel="stylesheet" href="css/common-pc.css">
-    <link href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style-mo.css">
     <link rel="stylesheet" href="css/style-pc.css">
     <title>(주)나눔솔루션</title>
@@ -16,7 +16,7 @@
 <body>
     <header>
         <div class="hWrap">
-            <h1>
+            <h1 class="on">
                 <a href="index.html">
                     <img src="images/LOGO.png" alt="나눔솔루션">
                 </a>
@@ -24,9 +24,9 @@
             
             <nav>
                 <div class="menu">
-                    <a href="#">Services</a>
-                    <a href="#">Project</a>
-                    <a class="about" href="#">About us</a>
+                    <a href="#" class="on">Services</a>
+                    <a href="#" class="on">Project</a>
+                    <a class="about on" href="#">About us</a>
                 </div><!--menu-->
             </nav>
         
@@ -38,8 +38,12 @@
         </div><!--hWrap-->
     </header>
   
-    
-    
+    <div class="cursor">
+        <div class="custom"></div>
+    </div>
+
+   
+
     <section class="s1" id="s1">
         <div class="wrap">
             <div class="txt">
@@ -52,7 +56,7 @@
                                 <div class="ani_dot"></div>
                                 <div class="ani_dot"></div>
                                 <div class="ani_dot"></div>
-                              </div>
+                            </div>
                         </div> 
                     </div><!--tit-box-->
                 </div><!--tit-wrap-->
@@ -67,7 +71,147 @@
         </div><!--wrap-->
     </section><!--s1-->
 
-    <section class="s2" id="s2" style="height: 100vh;"></section><!--s2-->
+    <!-- s2 -->
+    <section class="s2" id="s2">
+        <div class="wrap">
+            <div class="tit-wrap">
+                <div class="text">Our</div>
+                <div class="tit-box">
+                    <span>Services</span>
+                    <div class="arr"></div>
+                </div><!--tit-box-->
+            </div><!--tit-wrap-->
+            <p class="kr-txt">기획부터 구현까지 나눔솔루션 부산지사는 모두 가능합니다.</p>
+            <p class="en-txt">
+                Nanum Solution Busan branch<br>
+                can do everything from planning<br> 
+                project to making system.
+            </p>
+
+            <div class="slider">
+                <div class="swiper-container img-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide is01">
+                            <div class="swiper-slide-container">
+                            <div class="img-cover"></div>
+                            <div class="img-grcover"></div>
+                            <p>
+                                <span>기획</span><br>
+                                최고의 성과를 위한<br>
+                                프로젝트를 계획합니다.
+                            </p>
+                            </div><!--swiper-slide-container-->
+                        </div><!--01-->       
+
+                        <div class="swiper-slide is02">
+                            <div class="swiper-slide-container">
+                            <div class="img-cover"></div>
+                            <div class="img-grcover"></div>
+                            <p>
+                                <span>UI / UX 디자인</span><br>
+                                콘텐츠를 계획하고 배열하여<br>
+                                미적 요소와 기능적 요소를 이용해서<br>
+                                사용자 환경을 구성합니다.
+                            </p>
+                            </div><!--swiper-slide-container-->
+                        </div><!--02-->             
+
+                        <div class="swiper-slide is03">
+                            <div class="swiper-slide-container">
+                            <div class="img-cover"></div>
+                            <div class="img-grcover"></div>
+                            <p>
+                                <span>프론트엔드</span><br>
+                                백엔드 API에서 가져온<br>
+                                데이터의 출력, 입력을 통한<br>
+                                비즈니스 로직 구성과<br>
+                                사용자와 대화하는 UI 부분을<br class="pc"> 작업합니다.
+                            </p>
+                            </div><!--swiper-slide-container-->
+                        </div><!--03-->     
+
+                        <div class="swiper-slide is04">
+                            <div class="swiper-slide-container">
+                            <div class="img-cover"></div>
+                            <div class="img-grcover"></div>
+                            <p>
+                                <span>백엔드</span><br>
+                                데이터의 포맷이나<br>
+                                데이터베이스 입출력 및 다양한<br>
+                                비즈니스 프로세스를 코드로 구현하고,<br>
+                                이를 위한 DB를 설계하고<br>
+                                백엔드 프레임워크를<br>
+                                이용하여 앱을 구현합니다.
+                            </p>
+                            </div><!--swiper-slide-container-->
+                        </div><!--04-->  
+
+                        <div class="swiper-slide is05">
+                            <div class="swiper-slide-container">
+                            <div class="img-cover"></div>
+                            <div class="img-grcover"></div>
+                            <p>
+                                <span>하이브리드 앱 개발</span><br>
+                                사용자가 원하는 기능을 바탕으로<br>
+                                누구나 쉽고 편하게 사용할 수 있는<br>
+                                모바일 앱을 개발합니다.
+                            </p>
+                            </div><!--swiper-slide-container-->
+                        </div><!--05-->      
+                    </div><!--swiper-wrapper-->
+                </div><!--swiper-container-->
+
+                <div class="layout-wrap">
+                    <div class="swiper-container txt-slider">
+                        <div class="swiper-pagination slider-pagination"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide ts01">
+                                <div class="swiper-slide-container">
+                                    <p class="slider-article">
+                                        Project<br>
+                                        Management
+                                    </p>
+                                </div><!--swiper-slide-container-->
+                            </div><!--01-->                                
+                            <div class="swiper-slide ts02">
+                                <div class="swiper-slide-container">
+                                    <p class="slider-article">
+                                    UI / UX<br>
+                                    Design
+                                    </p>
+                                </div><!--swiper-slide-container-->
+                            </div><!--02-->                                
+                            <div class="swiper-slide ts03">
+                                <div class="swiper-slide-container">
+                                    <p class="slider-article">
+                                        Front - end
+                                    </p>
+                                </div><!--swiper-slide-container-->
+                            </div><!--03-->                                
+                            <div class="swiper-slide ts04">
+                                <div class="swiper-slide-container">
+                                    <p class="slider-article">
+                                        Back - end
+                                    </p>
+                                </div><!--swiper-slide-container-->
+                            </div><!--04-->                                
+                            <div class="swiper-slide ts05">
+                                <div class="swiper-slide-container">
+                                    <p class="slider-article">
+                                        Hybrid APP<br>
+                                        Develop
+                                    </p>
+                                </div><!--swiper-slide-container-->
+                            </div><!--05-->
+                        </div><!--swiper-wrapper-->
+                    </div><!--txt-slider-->
+                    <div class="swiper-button-prev slider-arr slider-arr-prev"></div>
+                    <div class="swiper-button-next slider-arr slider-arr-next"></div>
+                </div><!--layout-wrap-->
+            </div><!--slider-->
+        </div><!--wrap-->
+    </section>
+    <!-- s2 -->
 
     <section class="s3" id="s3">
         <div class="wrap">
@@ -141,7 +285,7 @@
                         지속가능한 도시 인프라와<br class="mo"> 시민들의 <mark class="text-highlight">삶의 질 향상</mark>에 힘 쓰도록 하겠습니다.
                         </p>
                     </div><!--main--> 
-                    <button class="urban" type="button" onclick="window.open('https://www.city.go.kr/');">
+                    <button class="urban on" type="button" onclick="window.open('https://www.city.go.kr/');">
                         <div class="box">
                             <p>도시재생</p>
                             <p class="site">바로가기</p>
@@ -203,7 +347,7 @@
                             대한민국을 위해 <mark class="text-highlight">노력</mark>하겠습니다.
                         </p>
                     </div><!--main--> 
-                    <button type="button" onclick="window.open('https://www.khug.or.kr/jeonse/index.jsp');">
+                    <button class="on" type="button" onclick="window.open('https://www.khug.or.kr/jeonse/index.jsp');">
                         <div class="box">
                             <p>안심전세</p>
                             <p class="site">바로가기</p>
@@ -220,10 +364,33 @@
                 </div><!--txt-box-->
             </div><!--pWrap-->
         </div><!--project 안심전세-->
+        <div class="pro office">
+            <div class="p-wrap">
+                <h1>
+                    Nanum busan<br>
+                    <span>Office</span><strong class="mo office-text">Since 2024.01~</strong>
+                </h1>
+                <div class="main2">
+                    <div class="slide">
+                        <div class="office-img-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide ois01"></div><!--ois01-->
+                                <div class="swiper-slide ois02"></div><!--ois02-->
+                                <div class="swiper-slide ois03"></div><!--ois03-->
+                                <div class="swiper-slide ois04"></div><!--ois04-->
+                                <div class="swiper-slide ois05"></div><!--ois05-->
+                            </div><!--swiper-wrapper-->
+                        </div><!--office-img-slider-->
+                            <div class="swiper-button-prev ois-arr ois-arr-prev"></div>
+                            <div class="swiper-button-next ois-arr ois-arr-next"></div>
+                            <div class="swiper-pagination ois-pagination"></div>
+                    </div><!--slide-->
+                </div><!--main-->
+            </div><!--p-wrap-->
+        </div><!--pro-->
         </div><!--wrap-->
     </section><!--s4-->
 
-    <div id="dd" style="height: 100vh;"></div>
 
     <section class="s5" id="s5">
         <div class="wrap">
@@ -257,23 +424,23 @@
                             <p>nanum@nanumsol.com</p>
                         </div>
 
-                        <div class="down pc">
-                            <a href="#">인터넷 구성 다운로드</a>
+                        <button class="down pc" id="on">
+                            <p>인터넷 구성 다운로드</p>
                             <div class="d-arrow">
                                 <img src="images/download.png" alt="다운로드">
                             </div>
-                        </div>
+                        </button>
                     </div><!--con-->
                 </div><!--contact-->
                 <div class="under">
-                    <div class="down mo">
-                        <a href="#">인터넷 구성 다운로드</a>
+                    <button class="down mo">
+                        <p>인터넷 구성 다운로드</p>
                         <div class="d-arrow">
                             <img src="images/download.png" alt="다운로드">
                         </div>
-                    </div>
-                    <div class="priv">
-                        개인정보취급방침 <span>ㅣ</span>  이용약관
+                    </button>
+                    <div class="priv on">
+                        <a href="pages/privacy/PrivacyLaw.html">개인정보취급방침</a> <span>ㅣ</span> <a href="pages/terms_of_use/Terms_of_use.html">이용약관</a>
                     </div>
                 </div>
 
@@ -299,7 +466,7 @@
     </section>
 
     <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/gsap/gsap.min.js"></script>
     <script src="js/scrollTrigger/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>

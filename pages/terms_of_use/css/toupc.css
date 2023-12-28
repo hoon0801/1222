@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@media all and (min-width:1200px){
+
+    .tou-pc{display: block;}
+    .tou-mo{display: block;}
+
+    body{overflow-x: hidden;}
+    h1{font-size: 48px; padding-top: 80px;}
+    .title-under{width: 5vw; margin-top: 3vh;}
+
+    .s0 strong{font-size: 1.17rem;}
+    .s0 #TitBox{display: flex;}
+    .s0 #TitBox .con{width: 50%; margin: 2vh 0; padding: 40px 60px; background-color: rgba(49, 152, 255, 0.05);}
+    .s0 #TitBox .con p{font-size: 1.2rem; line-height: 2.5; font-weight: 600;}
+
+    .s1 .text .ar-tit{font-size: 1.2rem; padding-top: 5vh;}
+    .s1 .text .pragraph{margin: 1.5vh 0;}
+    .s1 .text .pragraph p{font-size: 1.1rem;}
+
+    .t-wrap{
+        width: 1280px;
+    }
+
+}/* PC End */
