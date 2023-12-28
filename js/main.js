@@ -268,15 +268,13 @@ $(window).resize(function(){
   let winWidth2 = $(window).width();
 
 if(winWidth2 < 1280){
-setTimeout(function(){
-  location.reload();
-  },500)
+
   mobile();
 
 }else{
   setTimeout(function(){
-      location.reload();
-  },500)
+    location.reload();
+},500)
   pc();
 }
 
